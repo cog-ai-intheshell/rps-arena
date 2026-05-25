@@ -35,7 +35,7 @@ function App() {
   const [selected, setSelected] = useState<Selected>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [generation, setGeneration] = useState(0);
-  const [theme, setTheme] = useState(() => localStorage.getItem('rps-arena-theme') ?? 'light');
+  const [theme, setTheme] = useState(() => localStorage.getItem('rps-arena-theme') ?? 'dark');
 
   const playersRef = useRef(players);
   const matchesRef = useRef(matches);
